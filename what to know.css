@@ -1,0 +1,47 @@
+
+
+#wtk {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url('images/travel guide.png');
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+
+#texts p {
+	font-size: clamp(1rem, 3vw, 2.5rem);
+}
+
+@media screen and (min-width: 360px) {
+
+	#wtk {
+		background-size: contain;
+	}
+
+	#texts p {
+		position: relative;
+		top: 10px
+	}
+}
+
+@media screen and (min-width: 576px) {
+
+	#texts p {
+		position: relative;
+		top: 0px
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	#wtk {
+		background-size: contain;
+		min-height: 55vh;
+	}
+
+	#texts p {
+		top: 0
+	}
+}

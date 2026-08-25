@@ -1,0 +1,18 @@
+
+
+#about {
+    overflow: hidden;
+}
+
+#about img {
+    transition: transform .4s ease;
+    aspect-ratio: 4/3;
+}
+
+#about img:hover {
+    transform: scale(1.02);
+}
+
+#about .text-primary {
+    letter-spacing: 2px;
+}

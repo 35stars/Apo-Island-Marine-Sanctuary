@@ -1,0 +1,258 @@
+
+body {
+    background: #f3f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.itinerary-header {
+    background: linear-gradient(
+    135deg,
+    #006b70,
+    #008b8f
+    );
+
+    color: white;
+}
+
+.island-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    color: #006b70;
+
+    border-radius: 50%;
+
+    font-size: 2rem;
+}
+
+/* ================= TABLE ================= */
+
+.itinerary-table {
+    margin-bottom: 0;
+}
+
+.itinerary-table th {
+    background: #e3f2f3;
+    color: #006b70;
+    border-bottom: 1px solid #cbdede;
+}
+
+.itinerary-table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.itinerary-table tbody tr:hover {
+    background: #f5fbfb;
+}
+
+/* TIME */
+
+.time {
+    width: 15%;
+    color: #006b70;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* ACTIVITY */
+
+.activity {
+    width: 30%;
+    font-weight: 600;
+}
+
+.activity-icon {
+    width: 45px;
+    height: 45px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #007d80;
+
+    font-size: 1.7rem;
+}
+
+/* DETAILS */
+
+.details {
+    width: 55%;
+    color: #444;
+}
+
+/* ================= TIPS ================= */
+
+.tips {
+    background: #e4f3f3;
+    color: #075e62;
+}
+
+.tip-icon {
+    font-size: 1.4rem;
+    color: #007d80;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+    .itinerary-header {
+        padding: 25px !important;
+    }
+
+    .itinerary-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .itinerary-header p {
+        font-size: .95rem;
+    }
+
+    /* Hide table header */
+
+    .itinerary-table thead {
+        display: none;
+    }
+
+    /* Turn rows into cards */
+
+    .itinerary-table,
+    .itinerary-table tbody,
+    .itinerary-table tr,
+    .itinerary-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .itinerary-table tr {
+        margin: 10px;
+        width: calc(100% - 20px);
+
+        padding: 12px;
+
+        border-radius: 12px;
+
+        background: white;
+
+        box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+
+    .itinerary-table td {
+        border: none;
+        padding: 3px;
+    }
+
+    .time {
+        font-size: .9rem;
+    }
+
+    .activity {
+        font-size: 1rem;
+        margin-top: 3px;
+    }
+
+    .details {
+        display: none !important;
+    }
+
+    .activity-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.4rem;
+    }
+
+    .mobile-arrow {
+        display: block !important;
+    }
+
+    .tips {
+        display: none;
+    }
+}
+
+.mobile-arrow {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE COLLAPSE
+========================= */
+
+.mobile-collapse-btn {
+    display: none;
+    color: #007d80;
+    font-size: 1.1rem;
+}
+
+/* Arrow animation */
+.mobile-collapse-btn i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.mobile-collapse-btn[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.mobile-collapse-btn[aria-expanded="false"] i {
+    transform: rotate(0deg);
+}
+
+
+/* Desktop */
+
+.desktop-description {
+    display: block;
+}
+
+.mobile-description {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .details {
+        display: block !important;
+        width: 100%;
+    }
+
+    .mobile-collapse-btn {
+        display: block;
+    }
+
+    .desktop-description {
+        display: none;
+    }
+
+    .mobile-description {
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        background: #f3f8f8;
+        border-radius: 8px;
+        color: #555;
+        font-size: .9rem;
+    }
+
+    /* Keep description hidden until clicked */
+
+    .mobile-description.collapse:not(.show) {
+        display: none;
+    }
+
+}

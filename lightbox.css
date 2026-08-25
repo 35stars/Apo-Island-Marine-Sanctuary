@@ -1,0 +1,48 @@
+
+
+
+
+#lightbox { 
+    visibility: hidden; 
+    background: rgba(0, 0, 0, .9); 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+
+    z-index: 100; 
+    width: 100%; 
+    color: white; 
+    font-weight: bold; 
+}
+
+#lightbox #arrows {
+    opacity: .5;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#lightbox p {
+    margin-top: 1rem;
+}
+
+#lightbox #arrows img {
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+
+/*close button*/ 
+#close-btn { 
+    font-size: 50px; 
+    color: white; 
+    cursor: pointer; 
+}
+
+

@@ -1,0 +1,34 @@
+
+
+#header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background: rgba(255, 255, 255, .97);
+}
+
+
+#mainNav.show {
+	display: flex;
+}
+
+a {
+	font-size: 1rem;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+li {
+	margin-right: 1rem;
+	list-style: none;
+}
+
+#logo {
+	width: 100px;
+    padding-left: 	1rem;
+}
+
+#header span img {
+	width: 100%;
+}

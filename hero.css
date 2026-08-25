@@ -1,0 +1,18 @@
+
+
+#hero {
+	background-image: url('images/hero.jpg');
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh;
+}
+
+#hero h1 {
+	text-shadow: 1px 2px 10px black;
+}
+
+#hero .container p {
+	text-shadow: 5px 2px 10px black;
+	font-size: clamp(5px, 10vw, 20px);
+}
+
