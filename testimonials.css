@@ -1,0 +1,44 @@
+
+
+#testimonials  .bi {
+  fill: transparent;          /* Removes the inner color */
+  stroke: #ffc107;            /* Adds a gold/yellow outline */
+  stroke-width: 2px;          /* Adjusts outline thickness */
+}
+
+#testimonials .container {
+    width: 100%;
+}
+
+#testimonials .move-left {
+    width: max-content;
+    animation: moveLeft 30s linear infinite;
+}
+
+#testimonials .card {
+    border-style: none;
+    border-radius: 50px;
+	width: 30vw;
+	min-width: 340px;
+    transition: transform 0.3s ease;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 8px));
+    }
+}
+
+
+#testimonials .move-left:hover {
+    animation-play-state: paused;
+}
+
+#testimonials .card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
