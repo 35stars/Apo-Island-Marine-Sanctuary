@@ -41,12 +41,5 @@ mainNav.addEventListener('click', (e) => {
 
 });
 
-mainNav.addEventListener('mouseover', (e) => {
-
-    if (e.target.tagName !== 'A') return;
-
-    window.location.href = e.target.getAttribute('href');
-
-});
 
 
